@@ -1,4 +1,4 @@
-# Frisch’s planck layout (Mac)
+# ~Frisch’s~ jenshenrik's planck layout (Mac)
 
 This is a layout for the grid planck.
 Intended for use on a macbook.
