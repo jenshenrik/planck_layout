@@ -47,14 +47,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   ;  | Shift|
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | func | Ctrl |  Alt |  Cmd | numb | Space|Space | symb |  Cmd |  Alt | Ctrl | func |
+ * | Ctrl | func |  Alt |  Cmd | numb | Space|Space | symb |  Cmd |  Alt | func | Ctrl |
  * `-----------------------------------------------------------------------------------'
  */
 [_BASE] = {
   {KC_ESC   , KC_Q   , KC_W   , KC_E   , KC_R     , KC_T  , KC_Y  , KC_U     , KC_I   , KC_O   , KC_P     , MO(_SYST) },
   {KC_TAB   , KC_A   , KC_S   , KC_D   , KC_F     , KC_G  , KC_H  , KC_J     , KC_K   , KC_L   , MO(_MOVE), KC_ENT    },
   {KC_LSFT  , KC_Z   , KC_X   , KC_C   , KC_V     , KC_B  , KC_N  , KC_M     , KC_COMM, KC_DOT , KC_SCLN  , KC_RSFT   },
-  {MO(_FUNC), KC_LCTL, KC_LALT, KC_LGUI, MO(_NUMB), KC_SPC, KC_SPC, MO(_SYMB), KC_RGUI, KC_RALT, KC_RCTL  , MO(_FUNC) }
+  {KC_LCTL, MO(_FUNC), KC_LALT, KC_LGUI, MO(_NUMB), KC_SPC, KC_SPC, MO(_SYMB), KC_RGUI, KC_RALT, MO(_FUNC)  , KC_RCTL }
 },
 
 /* MOVE
