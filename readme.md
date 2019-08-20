@@ -20,7 +20,7 @@ Flashing instructions: https://docs.qmk.fm/flashing-firmware
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   ;  | Shift|
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | func | Ctrl |  Alt |  Cmd | numb | Space|Space | symb |  Cmd |  Alt | Ctrl | func |
+ * | Ctrl | func |  Alt |  Cmd | numb | Space|Space | symb |  Cmd |  Alt | func | Ctrl |
  * `-----------------------------------------------------------------------------------'
  */
 
