@@ -5,6 +5,7 @@
 #endif
 #include "eeconfig.h"
 #include "action_tapping.h"
+#include "keymap_danish.h"
 
 extern keymap_config_t keymap_config;
 
@@ -53,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_BASE] = {
   {KC_ESC   , KC_Q   , KC_W   , KC_E   , KC_R     , KC_T  , KC_Y  , KC_U     , KC_I   , KC_O   , KC_P     , MO(_SYST) },
   {KC_TAB   , KC_A   , KC_S   , KC_D   , KC_F     , KC_G  , KC_H  , KC_J     , KC_K   , KC_L   , MO(_MOVE), KC_ENT    },
-  {KC_LSFT  , KC_Z   , KC_X   , KC_C   , KC_V     , KC_B  , KC_N  , KC_M     , KC_COMM, KC_DOT , KC_SCLN  , KC_RSFT   },
+  {KC_LSFT  , KC_Z   , KC_X   , KC_C   , KC_V     , KC_B  , KC_N  , KC_M     , KC_COMM, KC_DOT , DK_SCLN  , KC_RSFT   },
   {KC_LCTL, MO(_FUNC), KC_LALT, KC_LGUI, MO(_NUMB), KC_SPC, KC_SPC, MO(_SYMB), KC_RGUI, KC_RALT, MO(_FUNC)  , KC_RCTL }
 },
 
@@ -87,10 +88,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_NUMB] = {
-  {_______, _______, _______      , _______   , _______   , _______, _______, KC_7   , KC_8   , KC_9   , KC_PLUS, _______},
-  {_______, _______, LALT(KC_QUOT), LALT(KC_O), LALT(KC_A), _______, _______, KC_4   , KC_5   , KC_6   , KC_MINS, _______},
-  {_______, _______, _______      , _______   , _______   , _______, _______, KC_1   , KC_2   , KC_3   , KC_ASTR, _______},
-  {_______, _______, _______      , _______   , _______   , KC_BSPC, KC_BSPC, ___X___, KC_0   , KC_DOT , KC_SLSH, _______}
+  {_______, _______, _______      , _______   , _______   , _______, _______, KC_7   , KC_8   , KC_9   , DK_PLUS, _______},
+  {_______, _______, DK_AE        , DK_OSTR   , DK_ARNG  , _______, _______, KC_4   , KC_5   , KC_6   , DK_MINS, _______},
+  {_______, _______, _______      , _______   , _______   , _______, _______, KC_1   , KC_2   , KC_3   , DK_ASTR, _______},
+  {_______, _______, _______      , _______   , _______   , KC_BSPC, KC_BSPC, ___X___, KC_0   , KC_DOT , DK_SLSH, _______}
 },
 
 /* SYSTEMS LAYER
@@ -125,9 +126,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
 [_SYMB] = {
-  {_______, _______, ACTION_MODS_KEY(MOD_LSFT, KC_SLSH), KC_LCBR, KC_RCBR, _______, _______, KC_AMPR, KC_BSLS, KC_EQL , KC_GRV , _______},
-  {_______, _______, KC_PIPE, KC_LBRC, KC_RBRC, _______, _______, KC_DLR , KC_PERC, KC_PND , KC_QUOT, _______},
-  {_______, _______, KC_CIRC, KC_LPRN, KC_RPRN, _______, _______, KC_EXLM, KC_AT  , KC_HASH, KC_TILD, _______},
+  {_______, _______, DK_QUES, DK_LCBR, DK_RCBR, _______, _______, DK_AMPR, DK_BSLS, DK_EQL , DK_GRV , _______},
+  {_______, _______, DK_PIPE, DK_LBRC, DK_RBRC, _______, _______, DK_DLR , DK_PERC, DK_HASH, DK_QUOT, _______},
+  {_______, _______, DK_CIRC, DK_LPRN, DK_RPRN, _______, _______, DK_EXLM, DK_AT  , DK_PND , DK_TILD, _______},
   {_______, _______, _______, _______, ___X___, KC_DEL , KC_DEL , _______, _______, _______, _______, _______}
 },
 
