@@ -1,4 +1,4 @@
-# ~Frisch’s~ jenshenrik's planck layout (Mac)
+# ~Frisch’s~ jenshenrik's planck layout
 
 This is a layout for the grid planck.
 Intended for use on a macbook.
@@ -9,6 +9,8 @@ Clone that and place this files in a folder under the planck keymaps.
 
 Build instructions: https://docs.qmk.fm/build-compile-instructions
 Flashing instructions: https://docs.qmk.fm/flashing-firmware
+
+Shift keys act as caps lock when pressed, and shift when held.
 
 
 ```
